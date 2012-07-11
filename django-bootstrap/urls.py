@@ -6,10 +6,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^boards/$', 'boards.views.index'),
-    url(r'^boards/(?P<board_id>\d+)/$', 'boards.views.detail'),
-    url(r'^games/(?P<game_id>>\d+)/$', 'boards.views.game'),
-    url(r'^users/(?P<game_id>\d+)/$', 'boards.views.user'),
+    url(r'^$', 'base.views.index'),
 
 
     # Uncomment the admin/doc line below to enable admin documentation:
